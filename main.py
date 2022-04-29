@@ -33,7 +33,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = VOGN(model, train_set_size=N, initial_prec=1e2, num_samples=10)
 #optimizer = optim.Adam(model.parameters())
 model, train_loss, train_accuracy, test_loss, test_accuracy = train_model(model, [trainloader, testloader], criterion,
-                                                                          optimizer, num_epochs=2)
+                                                                          optimizer, num_epochs=50)
 
 # Plot the results
 fig, ax = plt.subplots()
